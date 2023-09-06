@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SaludoFormG2_2024_1
 {
-    internal class SaludoForm : Form
+    internal partial class SaludoForm : Form
     {
         private Label lbNombre;
 		private TextBox txtbNombre;
@@ -33,6 +33,7 @@ namespace SaludoFormG2_2024_1
             btnAceptar = new Button();
             btnAceptar.Text = "Aceptar";
             btnAceptar.Location = new Point(160, 150);
+            btnAceptar.Click += new EventHandler(btnAceptar_Click);
 			this.Controls.Add(btnAceptar);
 
 			//Boton Limpiar

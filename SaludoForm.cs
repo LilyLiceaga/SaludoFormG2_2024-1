@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SaludoFormG2_2024_1
 {
@@ -11,6 +12,11 @@ namespace SaludoFormG2_2024_1
         public SaludoForm()
         {
             InitializeComponent();
+        }
+        internal void btnAceptar_Click(object sender, EventArgs e)
+        {
+            string nombre = txtbNombre.Text;
+            MessageBox.Show("Hola, " + nombre);
         }
     }
 }
