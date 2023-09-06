@@ -8,5 +8,9 @@ namespace SaludoFormG2_2024_1
 {
     internal partial class SaludoForm
     {
+        public SaludoForm()
+        {
+            InitializeComponent();
+        }
     }
 }

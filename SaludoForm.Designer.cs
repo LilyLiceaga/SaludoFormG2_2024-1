@@ -12,7 +12,7 @@ namespace SaludoFormG2_2024_1
 		private Button btnLimpiar;
 
 
-		public void SaludoForm()
+		public void InitializeComponent()
         {
             //Redimensionando y configurando la ventana
             this.Size = new System.Drawing.Size(520,330); //600, 400
