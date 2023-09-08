@@ -17,6 +17,13 @@ namespace SaludoFormG2_2024_1
         {
             string nombre = txtbNombre.Text;
             MessageBox.Show("Hola, " + nombre);
+
+            contar += 1;
+            lbNombre.Text = "Ingresa tu nombre\nContador: " + contar.ToString();
+        }
+        internal void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtbNombre.Text = " ";
         }
     }
 }
